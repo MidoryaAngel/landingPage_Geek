@@ -1,0 +1,71 @@
+body {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Animación de escala para la galería de imágenes */
+.gallery img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Texto con sombra */
+.text-container h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text p {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Animaciones de texto */
+@keyframes text-fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes text-slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animated-text {
+    animation: text-fade-in 2s ease-out;
+}
+
+.header h1 {
+    animation: text-slide-in 2s ease-out;
+}
+
+.button-hover {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-hover:hover {
+    background-color: #ff4c4c;
+    color: #fff;
+}
+
+/* Transiciones y animaciones en los botones */
+button {
+    animation: text-fade-in 2s ease-out 0.5s;
+}
+#imagen-gde img{
+    border-radius:15%;
+    
+
+}

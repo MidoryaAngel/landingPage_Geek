@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Geek Impresión 3D</title>
+    <style>
+        .gallery img {
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-light">
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
+        <div class="container">
+            <a href="#" class="navbar-brand fs-3 text-danger">Geek Impresión 3D</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#galeria" class="nav-link text-danger">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#eventos" class="nav-link text-danger">Eventos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Header-->
+    <header class="header py-7">
+        <div class="container-xl">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div  id=imagen-gde class="image-container mb-5 px-4">
+                        <img src="./images/figVarias2.webp" alt="Figuras 3D" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-container p-4 d-flex flex-column justify-content-center">
+                        <h1 class="display-3">¿Quieres aprender a pintar tus figuras 3D?</h1>
+                        <p class="lead">
+                            ¡Descubre el fascinante mundo del arte tridimensional con nuestros cursos de pintura de figuras 3D! Aprende técnicas innovadoras y desarrolla tus habilidades artísticas en un entorno creativo y amigable. Ya seas principiante o tengas experiencia previa, nuestros instructores expertos te guiarán paso a paso para que puedas dar vida a tus creaciones con detalles impresionantes y colores vibrantes. ¡No pierdas 
+                            esta oportunidad de llevar tu pasión por el arte al siguiente nivel! ¡Inscríbete ahora y transforma tus ideas en obras maestras!
+                        </p>
+                        <button class="btn btn-outline-danger text-uppercase mb-5">Consíguelo ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Galería de imágenes-->
+    <section class="gallery py-5 bg-light text-dark">
+        <div class="container">
+            <h2 id=galeria class="text-center mb-4">Galería de Imágenes</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/figuras3.webp" class="card-img-top" alt="Figura 1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/figVarias.webp" class="card-img-top" alt="Figura 2">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/guerrero.jpg" class="card-img-top" alt="Figura 3">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/FigGoku.png" class="card-img-top" alt="Figura 4">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/imagn_caras.jpeg" class="card-img-top" alt="Figura 5">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/imprimir-miniaturas-1.png" class="card-img-top" alt="Figura 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Texto-->
+    <section class="text bg-light text-secondary p-5">
+        <div class="container">
+            <p class="display-6">
+                Descubre nuestro servicio de impresión de figuras 3D en resina, ideal para prototipos y proyectos personalizados. Con calidad detallada y precisión, ayudamos a materializar tus diseños
+                . ¡Potencia tu creatividad con nosotros y da vida a tus ideas hoy mismo!
+            </p>
+            <h2 class="text-center pt-2 text-danger">Nuestros Eventos</h2><!--lead-->
+        </div>
+    </section>
+
+    <!--Nuestros Eventos-->
+    <div id="eventos" class="py-5">
+        <div class="container">
+            <div class="row g-5 py-5">
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Bazares</h5>
+                    <p class="text-muted">
+                        Ven al Bazar Friki y sumérgete en un mundo de cómics, coleccionables, y cosplay. Descubre productos únicos
+                         y conecta con otros apasionados por la cultura geek. ¡Un evento imperdible para todos los fanáticos!
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Eventos Geek</h5>
+                    <p class="text-muted">
+                        ¡No te pierdas el Evento Friki del Año! Sumérgete en un mundo de cosplay, cómics, 
+                        videojuegos y más. Únete a otros fans para vivir un día lleno de diversión, concursos y sorpresas geek.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Talleres D&D</h5>
+                    <p class="text-muted">
+                        Únete a nuestros Talleres de D&D y adéntrate en el mundo de la fantasía y la aventura. Aprende a crear personajes, diseñar campañas y dominar las reglas del juego. 
+                        ¡Perfecto para jugadores nuevos y experimentados que desean llevar sus partidas al siguiente nivel!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="bg-danger text-light py-3 w100 d-flex align-items justify-content-center">
+            <p class="fs-4 px-3 pt-4">Geek World &copy;Todos los Derechos Reservados 2024</p>
+            <div id="iconos">
+              <a href="https://www.facebook.com/GeekI3D?mibextid=ZbWKwL"><i class="bi bi-facebook text-light"></i></a>
+              <a href="https://www.instagram.com/geekimpresion3d?igsh=czR0OGZmNWl1YThj"><i class="bi bi-instagram text-light"></i></a>
+            </div>
+      
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+</body>
+</html>
